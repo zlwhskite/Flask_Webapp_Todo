@@ -7,11 +7,15 @@
   * Window10
   * VisualStudioCode
 ***
-* **프레임 워크 / DB**
+* **フレームワーク / DB**
   * Flask
   * SQLite
 ***
-  
+* **機能**
+  * 一覧表示, 登録, 削除, 更新
+***
+
+     
 
 
 

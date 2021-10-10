@@ -1,0 +1,74 @@
+body {
+   width: 1200px;
+   margin: auto;
+   text-align: center;
+   display: flex;
+   flex-wrap: wrap;  
+   flex-direction: column;
+   background-color: cornflowerblue;
+}
+
+
+.allForm {
+    padding: 1em;
+}
+.allForm h1 {
+    font-size: 50px;
+    font-weight: 600;
+    color: white;
+}
+.allForm h1:hover {
+    animation: banding 1s;
+}
+
+.allForm div input {
+    width: 50%;
+    padding: 10px;
+}
+.allForm div button {
+    border-radius: 12px;
+    background-color: aqua;
+    margin-top: 5px;
+    margin-left: 550px;
+    padding: 1em;
+    cursor: pointer;
+}
+
+.allForm a {
+    text-decoration: none;
+}
+
+.allForm #no {
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 20px;
+    color: whitesmoke;  
+}
+.allForm #yes {
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 20px;
+    color: blue;  
+}
+
+
+@keyframes banding {
+    0% {
+        transform: scale3d(1, 1, 1);
+    }
+    35% {
+        transform: scale3d(1.25, 0.75, 1);
+    }
+    45% {
+        transform: scale3d(0.75, 1, 1);
+    }
+    60% {
+        transform: scale3d(1.2, 0.8, 1);
+    }
+    70% {
+        transform: scale3d(1.06, 0.9, 1);
+    }
+    100% {
+        transform: scale3d(1.05, 0.8, 1);
+    }
+}

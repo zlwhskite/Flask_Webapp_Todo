@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/index.css">
+    <title>Todo List - WebApp</title>
+</head>
+<body>
+    <div class="allForm">
+        
+        <h1>Todoリスト</h1>
+
+        <form action="/add" method="POST">
+            <div>
+                <label for="Todo Title"></label>
+                <input type="text" name="content" placeholder="記入してしてくたさい。">
+                <br>
+                <button type="submit">追加</button>
+            </div>
+        </form>
+        
+        <hr>
+        
+        {% for todo in todo_list %}
+        <p>🌼  {{ todo.title }}</p>
+        
+        {% if todo.complete == False %}
+        <span id="no">未完</span>
+        {% else %}
+        <span id="yes">完了</span>
+        {% endif %} 
+        
+        <a href="/update/{{ todo.id }}">✅ </a>
+        <a href="/delete/{{ todo.id }}"> ❌</a>
+            
+        {% endfor %} 
+    </div>
+</body>
+</html>

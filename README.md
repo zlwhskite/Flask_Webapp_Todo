@@ -14,13 +14,10 @@
 * **機能**
   * 一覧表示, 登録, 削除, 更新
 ***
-
-![추가,삭제,업뎃 연결](https://user-images.githubusercontent.com/80504740/136685445-8bce20a2-117f-40d9-8edc-4b6f9a794fb4.png)
-
+* **PythonのORMライブラリーSQLAlchemy**
 ![db1](https://user-images.githubusercontent.com/80504740/136685446-e2031503-d935-45ec-9168-f43a39cb2620.png)
+***
 
-![index](https://user-images.githubusercontent.com/80504740/136685449-c47c1584-4aaf-447b-8b82-3a387da7081e.png)
-)
 
 
 
